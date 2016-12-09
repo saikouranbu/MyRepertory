@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyRepertory</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_insert">InsertActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="title_activity_up_delete">UpDeleteActivity</string>
+    <string name="title_activity_data">DataActivity</string>
+</resources>

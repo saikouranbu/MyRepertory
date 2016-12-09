@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myrepertory.UpdateActivity"
+    android:background="#ffffebbc"
+    android:id="@+id/back3"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="onBackClick">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="←"
+                android:id="@+id/prevButton3"
+                android:layout_marginRight="10dp"
+                android:textColor="#190de7"
+                android:textSize="20sp"
+                android:onClick="onPrevClick"
+                android:width="50sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="曲データ更新・削除"
+                android:id="@+id/textView3"
+                android:gravity="left|center"
+                android:textColor="#190de7"
+                android:background="#7cd5f3"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+            <requestFocus />
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="検索"
+                android:id="@+id/textView5"
+                android:gravity="left|center_vertical"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinner3"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText2"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner4"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff9d4ff" />
+    </LinearLayout>
+
+</RelativeLayout>
