@@ -100,19 +100,14 @@ public class InsertActivity extends Activity {
     }
 
     public void insert(SQLiteDatabase db) {
-        String replaceText;
         ContentValues val = new ContentValues();
-        replaceText = Check(name.getText().toString());
-        val.put("name", replaceText);
-        replaceText = Check(artist.getText().toString());
-        val.put("artist", replaceText);
+        val.put("name", name.getText().toString());
+        val.put("artist", artist.getText().toString());
         if (genre.getText().toString().length() != 0) {
-            replaceText = Check(genre.getText().toString());
-            val.put("genre", replaceText);
+            val.put("genre", genre.getText().toString());
         }
         if (data.getText().toString().length() != 0) {
-            replaceText = Check(data.getText().toString());
-            val.put("data", replaceText);
+            val.put("data", data.getText().toString());
         }
         if (dam.getText().toString().length() != 0) {
             val.put("dam", dam.getText().toString());
@@ -179,7 +174,8 @@ public class InsertActivity extends Activity {
         return true;
     }
 
-    private String Check(String line) {
+    // 置換いらなかった
+    /*private String Check(String line) {
         String result = line;
         if (line.indexOf("'") != -1) {
             result = StringReplace(line, "'", "''");
@@ -194,7 +190,7 @@ public class InsertActivity extends Activity {
             buffer.replace(start, start + prev.length(), next);
         }
         return buffer.toString();
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
